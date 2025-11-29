@@ -1,6 +1,6 @@
 # MGLang
 
-MGLang é um componente para Fyne que detecta e retorna o código base do idioma do sistema operacional.
+MGLang é um componente que detecta e retorna o código base do idioma do sistema operacional.
 
 ## Recursos
 
