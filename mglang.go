@@ -12,7 +12,7 @@ import (
 
 type Translations map[string]string
 
-var tr Translations
+var tr = make(Translations)
 
 // Detecta o idioma do sistema e retorna apenas o código base (pt, en, es, etc.)
 func GetLang() string {
@@ -27,7 +27,7 @@ func GetLang() string {
 	return lang
 }
 
-func Set(name, value string) {
+func Set(name string, value string) {
 	tr[name] = value
 }
 
