@@ -18,7 +18,8 @@ MGLang é um componente que detecta e retorna o código base do idioma do sistem
 import "github.com/mugomes/mglang"
 
 func main() {
-	if mglang.GetLang() == "pt" {
+    lang := mglang.GetLang()
+	if lang == "pt" {
 		mglang.Set("File", "Arquivo")
 	}
 	
@@ -32,12 +33,12 @@ func main() {
 
 ## Requirement
 
- - Go 1.25.3
+ - Go 1.24.6
 
 ## Support
 
 - GitHub: https://github.com/sponsors/mugomes
-- More: https://www.mugomes.com.br/apoie.html
+- More: https://www.mugomes.com.br/p/apoie.html
 
 ## License
 
