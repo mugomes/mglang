@@ -1,48 +1,103 @@
 # MGLang
 
-MGLang é um componente que detecta e retorna o código base do idioma do sistema operacional.
+Uma biblioteca simples e leve em Go para **gerenciamento de traduções (i18n)**, com suporte a **detecção automática do idioma do sistema** e **formatação dinâmica de strings**.
 
-## Recursos
+Ideal para aplicações desktop, CLI ou bibliotecas que precisam de internacionalização sem dependências pesadas.
 
-- GetLang: Retorna pt, en, es e assim por diante, de acordo com o idioma do sistema operacional.
-- Set: Adicione o texto original e a tradução.
-- T: Retorna a tradução
+---
 
-## Instalação
+## ✨ Recursos
 
-`go get github.com/mugomes/mglang`
+* 🌍 Detecção automática do idioma do sistema
+* 🗂️ Registro simples de traduções por chave
+* 🔁 Fallback automático quando a tradução não existe
+* 🧩 Suporte a para textos dinâmicos
+* 🚀 API minimalista e fácil de integrar
 
-## Exemplo
+---
 
+## 📦 Instalação
+
+```bash
+go get github.com/mugomes/mglang
 ```
+
+---
+
+## 🚀 Uso básico
+
+### Definindo traduções
+
+```go
 import "github.com/mugomes/mglang"
 
 func main() {
-    lang := mglang.GetLang()
-	if lang == "pt" {
-		mglang.Set("File", "Arquivo")
-	}
-	
-	print(mglang.T("File"))
+	mglang.Set("hello", "Olá")
+	mglang.Set("Welcome %s", "Bem-vindo, %s!")
 }
 ```
 
-## Information
+---
 
- - [Page MGLang](https://github.com/mugomes/mglang)
+### Obtendo tradução simples
 
-## Requirement
+```go
+text := mglang.T("hello")
+// Resultado: Olá
+```
 
- - Go 1.24.6
+---
 
-## Support
+### Tradução com parâmetros
 
-- GitHub: https://github.com/sponsors/mugomes
-- More: https://www.mugomes.com.br/p/apoie.html
+```go
+text := mglang.T("Welcome %s", "Murilo")
+// Resultado: Bem-vindo, Murilo!
+```
+
+---
+
+### Fallback automático
+
+```go
+text := mglang.T("not_exists")
+// Resultado: not_exists
+```
+
+---
+
+## 🌐 Detecção de idioma
+
+```go
+lang := mglang.GetLang()
+fmt.Println(lang) // ex: pt, en, es
+```
+
+A função detecta o idioma do sistema operacional e retorna apenas o **código base** (`pt`, `en`, `es`, etc).
+
+---
+
+## 🧠 Estrutura interna
+
+* `Set(key, value)` → registra tradução
+* `T(key, args...)` → retorna texto traduzido
+* `GetLang()` → detecta idioma do sistema
+
+---
+
+## 👤 Autor
+
+**Murilo Gomes Julio**
+
+🔗 [https://mugomes.github.io](https://mugomes.github.io)
+
+📺 [https://youtube.com/@mugomesoficial](https://youtube.com/@mugomesoficial)
+
+---
 
 ## License
 
-Copyright (c) 2025 Murilo Gomes Julio
+Copyright (c) 2025-2026 Murilo Gomes Julio
 
 Licensed under the [MIT](https://github.com/mugomes/mglang/blob/main/LICENSE) license.
 
