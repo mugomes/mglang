@@ -89,7 +89,7 @@ A função detecta o idioma do sistema operacional e retorna apenas o **código 
 
 **Murilo Gomes Julio**
 
-🔗 [https://profmugomes.github.io](https://profmugomes.github.io)
+🔗 [https://www.profmugomes.com.br](https://www.profmugomes.com.br)
 
 📺 [https://youtube.com/@profmugomes](https://youtube.com/@profmugomes)
 
