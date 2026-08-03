@@ -1,10 +1,5 @@
 # MGLang
 
-<!-- Badge opcional para deixar claro visualmente -->
-![Status](https://img.shields.io/badge/status-arquivado--archived-red.svg)
-
-> **Aviso importante:** Esta biblioteca foi **oficialmente arquivada** e não receberá mais atualizações, correções de bugs ou suporte para novas versões.
-
 Uma biblioteca simples e leve em Go para **gerenciamento de traduções (i18n)**, com suporte a **detecção automática do idioma do sistema** e **formatação dinâmica de strings**.
 
 Ideal para aplicações desktop, CLI ou bibliotecas que precisam de internacionalização sem dependências pesadas.
@@ -24,7 +19,7 @@ Ideal para aplicações desktop, CLI ou bibliotecas que precisam de internaciona
 ## 📦 Instalação
 
 ```bash
-go get github.com/mugomes/mglang
+go get github.com/profmugomes/mglang
 ```
 
 ---
@@ -34,7 +29,7 @@ go get github.com/mugomes/mglang
 ### Definindo traduções
 
 ```go
-import "github.com/mugomes/mglang"
+import "github.com/profmugomes/mglang"
 
 func main() {
 	mglang.Set("hello", "Olá")
@@ -94,9 +89,9 @@ A função detecta o idioma do sistema operacional e retorna apenas o **código 
 
 **Murilo Gomes Julio**
 
-🔗 [https://mugomes.github.io](https://mugomes.github.io)
+🔗 [https://profmugomes.github.io](https://profmugomes.github.io)
 
-📺 [https://youtube.com/@mugomesoficial](https://youtube.com/@mugomesoficial)
+📺 [https://youtube.com/@profmugomes](https://youtube.com/@profmugomes)
 
 ---
 
@@ -104,6 +99,6 @@ A função detecta o idioma do sistema operacional e retorna apenas o **código 
 
 Copyright (c) 2025-2026 Murilo Gomes Julio
 
-Licensed under the [MIT](https://github.com/mugomes/mglang/blob/main/LICENSE) license.
+Licensed under the [MIT](https://github.com/profmugomes/mglang/blob/main/LICENSE) license.
 
 All contributions to the MGLang are subject to this license.
