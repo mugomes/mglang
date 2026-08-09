@@ -1,4 +1,4 @@
-module github.com/profmugomes/mglang
+module github.com/profmugomes/mglang/v2
 
 go 1.26.5
 
